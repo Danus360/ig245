@@ -101,6 +101,4 @@ async def on_message(message):
         await client.send_message(message.author, embed=hlp)
 
     
-
-token = open('Texts/token..txt', 'r')
-client.run(token.read())
+client.run(proccess.env.TOKEN)
